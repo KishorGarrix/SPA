@@ -1,0 +1,23 @@
+<!-- <h3>
+    Color List
+            </h3>
+            <ul >
+              <li (click)="onSelect(color)" *ngFor="let color of colors" >
+                 <span class="badge">{{color.id}}</span> {{color.name}} 
+                
+              </li>
+          </ul>
+          <h3>You selected color={{colorSel}}</h3>   -->   
+          <div class="dropdown">
+            <button class="dropbtn">ColorList</button>
+            <div class="dropdown-content">
+              <ul >
+                <li (click)="onSelect(color)" *ngFor="let color of colors" >
+                   <span >{{color.name}}</span> 
+                  
+                </li>
+            </ul>
+        
+            </div>
+          </div>
+          <h3>You selected model {{modelSel}}</h3>

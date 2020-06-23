@@ -1,0 +1,20 @@
+<!-- <h2>brand component</h2> -->
+<!-- <h3>
+    Brand list
+      </h3>
+      <ul class="items">
+        <li  (click)="onSelect(brand)" *ngFor="let brand of brands" (click)="onSelect(brand)">
+          <span class="badge">{{brand.id}}</span> {{brand.name}}
+        </li>
+    </ul> -->
+    <div class="dropdown">
+      <button class="dropbtn">BrandList</button><br><br>
+      <div class="dropdown-content">
+        <ul >
+          <li  (click)="onSelect(brand)" *ngFor="let brand of brands" (click)="onSelect(brand)">
+            <span >{{brand.name}}</span>
+          </li>
+      </ul>
+
+      </div>
+    </div>

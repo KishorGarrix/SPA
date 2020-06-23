@@ -1,0 +1,21 @@
+<!-- <h3>
+    Models List  
+        </h3>
+        <ul class="items">
+          <li  (click)="onSelect(model)" *ngFor="let model of models" >
+            <span class="badge">{{model.id}}</span> {{model.name}}
+          </li>
+      </ul>
+   -->
+   <div class="dropdown">
+    <button class="dropbtn">ModelList</button>
+    <div class="dropdown-content">
+      <ul >
+        <li  (click)="onSelect(model)" *ngFor="let model of models" >
+          <span> {{model.name}}</span>
+        </li>
+    </ul>
+
+    </div>
+  </div>
+  <h3>You selected brand  {{BrandId}}</h3>
